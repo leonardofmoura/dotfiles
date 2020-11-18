@@ -100,7 +100,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 #Actual aliases
-alias sicstus='rlwrap ~/Documents/MIEIC/3ano/1semestre/PLOG/sicstus4.5.1/bin/sicstus-4.5.1'
+alias sicstus='rlwrap /home/lmoura/Documentos/MIEIC/3ano/1semestre/PLOG/sicstus4.5.1/bin/sicstus-4.5.1'
 
 #Configs
 alias zshconfig='vim ~/.zshrc'
@@ -130,6 +130,7 @@ alias mfes='cd ~/Documents/MIEIC/4ano/1semestre/MFES'
 alias cl='clear'
 alias jcall='javac *.java'
 alias jclean='rm *.class'
+alias ssha='eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa'
 
 #add to path
 export PATH=$PATH:~/.local/bin
