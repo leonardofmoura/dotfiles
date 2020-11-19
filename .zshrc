@@ -100,7 +100,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 #Actual aliases
-alias sicstus='rlwrap /home/lmoura/Documentos/MIEIC/3ano/1semestre/PLOG/sicstus4.5.1/bin/sicstus-4.5.1'
+alias sicstus='rlwrap ~/Documents/MIEIC/3ano/1semestre/PLOG/sicstus4.5.1/bin/sicstus-4.5.1'
 
 #Configs
 alias zshconfig='vim ~/.zshrc'
