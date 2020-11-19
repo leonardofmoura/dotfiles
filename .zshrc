@@ -105,7 +105,7 @@ alias sicstus='rlwrap /home/lmoura/Documentos/MIEIC/3ano/1semestre/PLOG/sicstus4
 #Configs
 alias zshconfig='vim ~/.zshrc'
 alias alconfig='vim ~/.config/alacritty/alacritty.yml'
-alias wmconfig='vim ~/.config/awesome/rc.lua'
+alias wmconfig='code ~/.config/awesome/'
 
 #courses
 alias esof='cd ~/Documents/MIEIC/3ano/1semestre/ESOF'
