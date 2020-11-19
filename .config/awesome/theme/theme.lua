@@ -127,10 +127,10 @@ theme.awesome_icon = theme_assets.awesome_icon(
 theme.icon_theme = "/usr/share/icons/Papirus-Dark"
 
 -- Aditional theme icons
-theme.bat_widget_icon = "~/.config/awesome/theme/icons/battery-full.png"
-theme.bat_plug_icon = "~/.config/awesome/theme/icons/plug.png"
-theme.thermometer_icon = "~/.config/awesome/theme/icons/thermometer-half.png"
-theme.volume_icon = "~/.config/awesome/theme/icons/volume-up.png"
+theme.bat_widget_icon = "/home/lmoura/.config/awesome/theme/icons/battery-full.png"
+theme.bat_plug_icon = "/home/lmoura/.config/awesome/theme/icons/plug.png"
+theme.thermometer_icon = "/home/lmoura/.config/awesome/theme/icons/thermometer-half.png"
+theme.volume_icon = "/home/lmoura/.config/awesome/theme/icons/volume-up.png"
 
 return theme
 

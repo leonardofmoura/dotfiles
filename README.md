@@ -1,6 +1,6 @@
 # dotfiles
 
-My UNIX configuration files
+My UNIX configuration files. The structure of this repository follows the structure of m own home folder.
 
 ## Configuration 
 
@@ -30,11 +30,12 @@ I currently run the Arch linux distribution using AwesomeWM using the following 
 
 ## Config folder
 
-This folder represents the `.config` folder inside the home directory that stores most configuration files.
+This folder stores most configurations, divided in subfolders, each one for a separate package configuration.
 
-## Files folder
 
-This folder contains dotfiles that should be placed directly in the `/home` folder, preceding their names with a dot. This means the `zshrc` file in the repository should be placed as `.zshrc` in the home directory.
+## Other files
+
+Other dotfiles should be placed directly in the `/home` folder as they often deal with configurations that only require a single configuration file.
 
 --- 
 

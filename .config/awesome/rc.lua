@@ -26,7 +26,7 @@ require("main.error_handling")
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, font and wallpapers.
-beautiful.init("~/.config/awesome/theme/theme.lua")
+beautiful.init("/home/lmoura/.config/awesome/theme/theme.lua")
 
 --user variables
 user_vars = require("main.user_variables")
