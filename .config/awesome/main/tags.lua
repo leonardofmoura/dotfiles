@@ -4,7 +4,9 @@ local awful = require("awful")
 local names = { 
     "web", 
     "code", 
-    "term", 
+    "term",
+    "files",
+    "coms", 
     "music", 
 }
 
