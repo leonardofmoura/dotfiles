@@ -17,6 +17,14 @@ local battery_text = lain.widget.bat {
         else
             battery_icon:set_image(beautiful.bat_widget_icon)
         end
+
+        bat_notification_critical_preset = {
+            title = "Battery exhausted",
+            text = "Shutdown imminent",
+            timeout = 15,
+            fg = "#FFFFFF",
+            bg = "#FF0000"
+    }
     end
 }
 
