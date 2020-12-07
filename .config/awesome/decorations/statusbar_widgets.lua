@@ -1,6 +1,8 @@
 local lain = require("lain")
 local beautiful = require("beautiful")
 local wibox = require("wibox")
+local naughty = require("naughty")
+
 
 local markup = lain.util.markup
 
@@ -24,7 +26,24 @@ local battery_text = lain.widget.bat {
             timeout = 15,
             fg = "#FFFFFF",
             bg = "#FF0000"
-    }
+        }
+
+        bat_notification_low_preset = {
+            title = "Battery low",
+            text = "Plug the cable!",
+            timeout = 15,
+            fg = "#202020",
+            bg = "#f7eb00"
+        }
+
+        bat_notification_charged_preset = {
+            title   = "Battery full",
+            text    = "You can unplug the cable",
+            timeout = 15,
+            fg      = "#FFFFFF",
+            bg      = "#00BB00"
+        }
+    
     end
 }
 
