@@ -24,6 +24,7 @@ I currently run the Arch linux distribution using AwesomeWM using the following 
 - **Bluetooth:** [Bluez](http://www.bluez.org/) using [Blueman](https://github.com/blueman-project/blueman) as a frontend
 - **Touchpad drivers:** [Libinput](https://freedesktop.org/wiki/Software/libinput/) using [Xinput](https://wiki.archlinux.org/index.php/Libinput#Configuration) for configuration
 - **Screen backlight:** [Xbacklight](https://www.archlinux.org/packages/?name=xorg-xbacklight)
+- **Multi Screen:** [Xrandr](https://wiki.archlinux.org/index.php/Xrandr) with [ARandR](https://christian.amsuess.com/tools/arandr/) as frontend.
 - **GTK theme:** [Arc-Dark](https://github.com/jnsh/arc-theme)
 - **GTK theme selector:** [Lxappearance](https://wiki.lxde.org/en/LXAppearance)
 - **WM Icons:** [FontAwesome](https://fontawesome.com/)

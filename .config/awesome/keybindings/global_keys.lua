@@ -172,5 +172,19 @@ globalkeys = gears.table.join(
 		    widgets.vol_control.update()
         end,
         {description = "raise volume", group="system"}
+    ),
+
+    -- Tpggle second screen
+    awful.key({modkey, "Control"},  "s",
+        function()
+            os.execute("xrandr --output HDMI1 --auto --primary --output eDP1 --auto --right-of HDMI1")
+            naughty.notify({
+                title = "Second Screen",
+                text = "Second Screen Enabeled",
+                -- icon = beautiful.volume_icon,
+                timeout = 1
+            })
+        end,
+        {description = "enable second screen", group="system"}
     )
 )
