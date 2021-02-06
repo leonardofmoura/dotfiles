@@ -181,9 +181,9 @@ globalkeys = gears.table.join(
             naughty.notify({
                 title = "Second Screen",
                 text = "Second Screen Enabeled",
-                -- icon = beautiful.volume_icon,
                 timeout = 1
             })
+            awesome.restart()
         end,
         {description = "enable second screen", group="system"}
     )
