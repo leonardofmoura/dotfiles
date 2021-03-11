@@ -55,7 +55,7 @@ require("decorations.wallpaper")
 screen.connect_signal("property::geometry", set_wallpaper)
 
 -- add the statusbar
-require("decorations.statusbar_main")
+require("decorations.statusbar.main")
 -- }}}
 
 -- Mouse buttons

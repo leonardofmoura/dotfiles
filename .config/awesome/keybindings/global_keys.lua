@@ -6,7 +6,7 @@ local naughty = require("naughty")
 local beautiful = require("beautiful")
 
 -- require widgets to manipulate
-local widgets = require("decorations.statusbar_widgets")
+local widgets = require("decorations.statusbar.widgets")
 
 globalkeys = gears.table.join(
     awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
