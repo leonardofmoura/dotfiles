@@ -30,5 +30,7 @@ colors:
 
 font:
   size: 8.0
+  normal: 
+    family: DejaVuSansMono
 
 
