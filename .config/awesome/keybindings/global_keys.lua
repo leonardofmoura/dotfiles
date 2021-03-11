@@ -174,7 +174,7 @@ globalkeys = gears.table.join(
         {description = "raise volume", group="system"}
     ),
 
-    -- Tpggle second screen
+    -- Toggle second screen
     awful.key({modkey, "Control"},  "s",
         function()
             os.execute("xrandr --output HDMI1 --auto --primary --output eDP1 --auto --right-of HDMI1")
@@ -186,5 +186,19 @@ globalkeys = gears.table.join(
             awesome.restart()
         end,
         {description = "enable second screen", group="system"}
+    ),
+
+    -- Change to single screen (Mirror screens)
+    awful.key({modkey, "Control", "Shift"},  "s",
+        function()
+            os.execute("xrandr --output HDMI1 --auto --same-as eDP1 --output eDP1 --auto --primary")
+            naughty.notify({
+                title = "Second Screen",
+                text = "Mirror screen enabeled",
+                timeout = 1
+            })
+            awesome.restart()
+        end,
+        {description = "mirror screens", group="system"}
     )
 )
