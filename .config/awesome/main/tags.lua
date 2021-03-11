@@ -2,12 +2,12 @@ local awful = require("awful")
 
 -- Each screen has its own tag table.
 local names = { 
-    "web", 
-    "code", 
-    "term",
-    "files",
-    "coms", 
-    "music", 
+    "1:web", 
+    "2:code", 
+    "3:term",
+    "4:files",
+    "5:coms", 
+    "6:music", 
 }
 
 local l = awful.layout.suit  -- Just to save some typing: use an alias.
