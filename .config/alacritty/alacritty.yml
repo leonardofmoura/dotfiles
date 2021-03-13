@@ -29,7 +29,7 @@ colors:
     white:   '0xd9f4e9'
 
 font:
-  size: 8.0
+  size: 8
   normal: 
     family: DejaVuSansMono
 
