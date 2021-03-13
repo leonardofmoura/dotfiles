@@ -4,7 +4,7 @@ local wibox = require("wibox")
 local lain = require("lain")
 local beautiful = require("beautiful")
 
-local taglist_buttons = require("decorations.statusbar.taglist")
+local create_taglist = require("decorations.statusbar.taglist")
 local tasklist_buttons = require("decorations.statusbar.tasklist")
 local widgets = require("decorations.statusbar.widgets")
 
@@ -21,14 +21,6 @@ local separator = {
 
 -- Create a textclock widget
 mytextclock = wibox.widget.textclock()
-
-local update_tag = function(item, tag, index)
-    local highlight = item:get_children_by_id('highlight')[1]
-    local bg = item:get_children_by_id('background_role')[1]
-
-    highlight.visible = tag.selected
-    bg.bg = beautiful.bg_normal
-end
  
 
 awful.screen.connect_for_each_screen(function(s)
@@ -49,48 +41,7 @@ awful.screen.connect_for_each_screen(function(s)
         awful.button({ }, 4, function () awful.layout.inc( 1) end),
         awful.button({ }, 5, function () awful.layout.inc(-1) end)))
     -- Create a taglist widget
-    s.mytaglist = awful.widget.taglist {
-        screen  = s,
-        filter  = awful.widget.taglist.filter.all,
-        buttons = taglist_buttons,
-        style = {
-            bg_focus = beautiful.bg_normal
-        },
-        widget_template = {
-            {
-                {
-                    nil,
-                    {
-                        id = "text_role",
-                        widget = wibox.widget.textbox,
-                    },
-                    {
-                        {
-                            {
-                                widget = wibox.widget.textbox
-                            },
-                            bg = beautiful.bg_focus,
-                            id = "highlight",
-                            widget = wibox.container.background
-                        },
-                        forced_height = 2,
-                        widget = wibox.container.background
-                    },
-                    layout  = wibox.layout.align.vertical
-                },
-                id = 'background_role',
-                widget = wibox.container.background,
-                bg = beautiful.bg_normal
-            },
-            widget = wibox.container.margin,
-            left = 3,
-            right = 3,
-
-            create_callback = update_tag,
-            
-            update_callback = update_tag
-        }
-    }
+    s.mytaglist = create_taglist(s)
 
     -- Create a tasklist widget
     s.mytasklist = awful.widget.tasklist {
