@@ -130,7 +130,7 @@ alias ssin='cd ~/Documents/MIEIC/4ano/2semestre/SSIN'
 alias mark='cd ~/Documents/MIEIC/4ano/2semestre/MARK'
 alias asso='cd ~/Documents/MIEIC/4ano/2semestre/ASSO'
 alias iope='cd ~/Documents/MIEIC/4ano/2semestre/IOPE'
-alias lgp='cd ~/Documents/MIEIC/4ano/2semestr/LGP'
+alias lgp='cd ~/Documents/MIEIC/4ano/2semestre/LGP'
 
 #utilities
 alias cl='clear'
