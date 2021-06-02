@@ -100,7 +100,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 #Actual aliases
-alias sicstus='rlwrap ~/Documents/MIEIC/3ano/1semestre/PLOG/sicstus4.5.1/bin/sicstus-4.5.1'
+alias sicstus='rlwrap ~/$DOCS/MIEIC/3ano/1semestre/PLOG/sicstus4.5.1/bin/sicstus-4.5.1'
 
 #Configs
 alias zshconfig='vim ~/.zshrc'
@@ -108,35 +108,39 @@ alias alconfig='vim ~/.config/alacritty/alacritty.yml'
 alias wmconfig='code ~/.config/awesome/'
 
 #courses
-alias esof='cd ~/Documents/MIEIC/3ano/1semestre/ESOF'
-alias laig='cd ~/Documents/MIEIC/3ano/1semestre/LAIG'
-alias ltw='cd ~/Documents/MIEIC/3ano/1semestre/LTW'
-alias plog='cd ~/Documents/MIEIC/3ano/1semestre/PLOG'
-alias rcom='cd ~/Documents/MIEIC/3ano/1semestre/RCOM'
 
-alias sdis='cd ~/Documents/MIEIC/3ano/2semestre/SDIS'
-alias lbaw='cd ~/Documents/MIEIC/3ano/2semestre/LBAW'
-alias iart='cd ~/Documents/MIEIC/3ano/2semestre/IART'
-alias ppin='cd ~/Documents/MIEIC/3ano/2semestre/PPIN'
-alias comp='cd ~/Documents/MIEIC/3ano/2semestre/COMP'
+export DOCS=/home/lmoura/Docs/Documents
 
-alias ldso='cd ~/Documents/MIEIC/4ano/1semestre/LDSO'
-alias aiad='cd ~/Documents/MIEIC/4ano/1semestre/AIAD'
-alias sinf='cd ~/Documents/MIEIC/4ano/1semestre/SINF'
-alias gemp='cd ~/Documents/MIEIC/4ano/1semestre/GEMP'
-alias mfes='cd ~/Documents/MIEIC/4ano/1semestre/MFES'
+alias esof='cd $DOCS/MIEIC/3ano/1semestre/ESOF'
+alias laig='cd $DOCS/MIEIC/3ano/1semestre/LAIG'
+alias ltw='cd $DOCS/MIEIC/3ano/1semestre/LTW'
+alias plog='cd $DOCS/MIEIC/3ano/1semestre/PLOG'
+alias rcom='cd $DOCS/MIEIC/3ano/1semestre/RCOM'
 
-alias ssin='cd ~/Documents/MIEIC/4ano/2semestre/SSIN'
-alias mark='cd ~/Documents/MIEIC/4ano/2semestre/MARK'
-alias asso='cd ~/Documents/MIEIC/4ano/2semestre/ASSO'
-alias iope='cd ~/Documents/MIEIC/4ano/2semestre/IOPE'
-alias lgp='cd ~/Documents/MIEIC/4ano/2semestre/LGP'
+alias sdis='cd $DOCS/MIEIC/3ano/2semestre/SDIS'
+alias lbaw='cd $DOCS/MIEIC/3ano/2semestre/LBAW'
+alias iart='cd $DOCS/MIEIC/3ano/2semestre/IART'
+alias ppin='cd $DOCS/MIEIC/3ano/2semestre/PPIN'
+alias comp='cd $DOCS/MIEIC/3ano/2semestre/COMP'
+
+alias ldso='cd $DOCS/MIEIC/4ano/1semestre/LDSO'
+alias aiad='cd $DOCS/MIEIC/4ano/1semestre/AIAD'
+alias sinf='cd $DOCS/MIEIC/4ano/1semestre/SINF'
+alias gemp='cd $DOCS/MIEIC/4ano/1semestre/GEMP'
+alias mfes='cd $DOCS/MIEIC/4ano/1semestre/MFES'
+
+alias ssin='cd $DOCS/MIEIC/4ano/2semestre/SSIN'
+alias mark='cd $DOCS/MIEIC/4ano/2semestre/MARK'
+alias asso='cd $DOCS/MIEIC/4ano/2semestre/ASSO'
+alias iope='cd $DOCS/MIEIC/4ano/2semestre/IOPE'
+alias lgp='cd $DOCS/MIEIC/4ano/2semestre/LGP'
 
 #utilities
 alias cl='clear'
 alias jcall='javac *.java'
 alias jclean='rm *.class'
 alias ssha='eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa'
+alias pgadmin='docker run -p 5050:5050 -e "PGADMIN_DEFAULT_EMAIL=admin@admin.com" -e "PGADMIN_DEFAULT_PASSWORD=password" -e "PGADMIN_LISTEN_PORT=5050" --rm --name pgadmin  dpage/pgadmin4'
 
 #add to path
 export PATH=$PATH:~/.local/bin
