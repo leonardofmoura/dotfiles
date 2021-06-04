@@ -174,6 +174,33 @@ globalkeys = gears.table.join(
         {description = "raise volume", group="system"}
     ),
 
+    awful.key({},  "XF86MonBrightnessUp",
+        function()
+            os.execute("xbacklight -inc 15")
+            naughty.notify({
+                title = "Screen Brightness",
+                text = "brightness increased",
+                -- icon = beautiful.volume_icon, //TODO add icon
+                timeout = 1,
+            })
+        end,
+        {description = "increase screen brightness", group="system"}
+    ),
+
+    awful.key({},  "XF86MonBrightnessDown",
+        function()
+            os.execute("xbacklight -dec 15")
+            naughty.notify({
+                title = "Screen Brightness",
+                text = "brightness decreased",
+                -- icon = beautiful.volume_icon, //TODO add icon
+                timeout = 1,
+            })
+        end,
+        {description = "decrease screen brightness", group="system"}
+    ),
+      
+
     -- Toggle second screen
     awful.key({modkey, "Control"},  "s",
         function()
