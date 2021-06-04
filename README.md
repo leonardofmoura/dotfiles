@@ -18,7 +18,7 @@ I currently run the Arch linux distribution using AwesomeWM using the following 
 - **Pdf viewer:** [Xreader](https://github.com/linuxmint/xreader/)
 - **App launcher:** [Rofi](https://github.com/davatorium/rofi)
 - **Icon theme:** [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
-- **Compositor:** [Picom](https://github.com/yshui/picom)
+- **Compositor:** [Picom-iBhagwan](https://github.com/ibhagwan/picom)
 - **Sound:** [Alsamixer](https://wiki.archlinux.org/index.php/Advanced_Linux_Sound_Architecture#Unmuting_the_channels) and [Pulseaudio](https://wiki.archlinux.org/index.php/PulseAudio)
 - **Networking:** [NetworkManager](https://wiki.gnome.org/Projects/NetworkManager/) using [nm-applet](https://www.archlinux.org/packages/?name=network-manager-applet) as a frontend
 - **Bluetooth:** [Bluez](http://www.bluez.org/) using [Blueman](https://github.com/blueman-project/blueman) as a frontend
