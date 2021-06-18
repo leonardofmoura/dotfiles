@@ -99,16 +99,22 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#Actual aliases
+# Actual aliases
 alias sicstus='rlwrap ~/$DOCS/MIEIC/3ano/1semestre/PLOG/sicstus4.5.1/bin/sicstus-4.5.1'
 
-#Configs
+# Configs
 alias zshconfig='vim ~/.zshrc'
 alias alconfig='vim ~/.config/alacritty/alacritty.yml'
 alias wmconfig='code ~/.config/awesome/'
 
-#courses
+# Dotfile management
+alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias css='config status -s'
+alias caa='config add -A'
+alias ccm='config commit -m '
+alias cpush='config push'
 
+# Courses
 export DOCS=/home/lmoura/Docs/Documents
 
 alias esof='cd $DOCS/MIEIC/3ano/1semestre/ESOF'
@@ -135,12 +141,12 @@ alias asso='cd $DOCS/MIEIC/4ano/2semestre/ASSO'
 alias iope='cd $DOCS/MIEIC/4ano/2semestre/IOPE'
 alias lgp='cd $DOCS/MIEIC/4ano/2semestre/LGP'
 
-#utilities
+# Utilities
 alias cl='clear'
 alias jcall='javac *.java'
 alias jclean='rm *.class'
 alias ssha='eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa'
 alias pgadmin='docker run -p 5050:5050 -e "PGADMIN_DEFAULT_EMAIL=admin@admin.com" -e "PGADMIN_DEFAULT_PASSWORD=password" -e "PGADMIN_LISTEN_PORT=5050" --rm --name pgadmin  dpage/pgadmin4'
 
-#add to path
+# add to path
 export PATH=$PATH:~/.local/bin
