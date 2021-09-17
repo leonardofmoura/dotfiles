@@ -111,7 +111,7 @@ alias wmconfig='code ~/.config/awesome/'
 alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias css='config status -s'
 alias caa='config add -A'
-alias ccm='config commit -m '
+alias ccm='config commit -m'
 alias cpush='config push'
 
 # Courses
@@ -140,6 +140,11 @@ alias mark='cd $DOCS/MIEIC/4ano/2semestre/MARK'
 alias asso='cd $DOCS/MIEIC/4ano/2semestre/ASSO'
 alias iope='cd $DOCS/MIEIC/4ano/2semestre/IOPE'
 alias lgp='cd $DOCS/MIEIC/4ano/2semestre/LGP'
+
+alias aapp='cd $DOCS/MIEIC/5ano/1semestre/AAPP'
+alias aos='cd $DOCS/MIEIC/5ano/1semestre/AOS'
+alias odc='cd $DOCS/MIEIC/5ano/1semestre/ODC'
+alias pea='cd $DOCS/MIEIC/5ano/1semestre/PEA'
 
 # Utilities
 alias cl='clear'
