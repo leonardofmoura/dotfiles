@@ -133,9 +133,9 @@ globalkeys = gears.table.join(
 
     awful.key({modkey }, "d", 
         function() 
-            awful.spawn("nemo")
+            awful.spawn("ranger")
         end,
-        {description = "launch nemo", group="apps"}
+        {description = "launch ranger", group="apps"}
     ),
 
     awful.key({modkey }, "v", 
