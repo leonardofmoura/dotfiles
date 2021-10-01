@@ -12,7 +12,7 @@ I currently run the Arch linux distribution using AwesomeWM using the following 
 - **Shell:** [Zsh](https://www.zsh.org/) using [Oh-my-zsh](https://ohmyz.sh/)
 - **Terminal:** [Alacritty](https://github.com/alacritty/alacritty)
 - **Text Editors:** [VSCode](https://code.visualstudio.com/) and [Vim](https://www.vim.org/)
-- **File Manager:** [Nemo](https://github.com/linuxmint/nemo)
+- **File Manager:** [Nemo](https://github.com/linuxmint/nemo) and [Ranger](https://github.com/ranger/ranger)
 - **Image viewer:** [Feh](https://feh.finalrewind.org/)
 - **Video player:** [VLC](https://www.videolan.org/vlc/)
 - **Pdf viewer:** [Xreader](https://github.com/linuxmint/xreader/)
