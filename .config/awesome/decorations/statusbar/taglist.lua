@@ -33,7 +33,7 @@ local create_taglist = function(s)
         filter  = awful.widget.taglist.filter.all,
         buttons = taglist_buttons,
         style = {
-            bg_focus = beautiful.bg_normal
+            bg_focus = beautiful.bg_normal,
         },
         widget_template = {
             {
@@ -48,7 +48,7 @@ local create_taglist = function(s)
                             {
                                 widget = wibox.widget.textbox
                             },
-                            bg = beautiful.bg_focus,
+                            bg = beautiful.main,
                             id = "highlight",
                             widget = wibox.container.background
                         },

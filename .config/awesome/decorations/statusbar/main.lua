@@ -5,7 +5,7 @@ local lain = require("lain")
 local beautiful = require("beautiful")
 
 local create_taglist = require("decorations.statusbar.taglist")
-local tasklist_buttons = require("decorations.statusbar.tasklist")
+local create_tasklist = require("decorations.statusbar.tasklist")
 local widgets = require("decorations.statusbar.widgets")
 
 local sep = lain.util.separators
@@ -44,11 +44,7 @@ awful.screen.connect_for_each_screen(function(s)
     s.mytaglist = create_taglist(s)
 
     -- Create a tasklist widget
-    s.mytasklist = awful.widget.tasklist {
-        screen  = s,
-        filter  = awful.widget.tasklist.filter.currenttags,
-        buttons = tasklist_buttons
-    }
+    s.mytasklist = create_tasklist(s)
 
     -- Create the wibox
     s.mywibox = awful.wibar({ position = "top", screen = s })

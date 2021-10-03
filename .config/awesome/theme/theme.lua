@@ -11,7 +11,7 @@ local themes_path = gfs.get_themes_dir()
 
 local theme = {}
 
-theme.font          = "DejaVuSansMono 11"
+theme.font          = "DejaVuSansMono 12"
 
 -- Define color pallet ----
 
@@ -27,6 +27,9 @@ theme.magenta       = "#b470a7"
 theme.cyan          = "#549faa"
 theme.white         = "#c0c5ce"
 
+theme.main          = theme.yellow
+theme.text          = theme.foreground
+
 ---------------------------
 
 
@@ -36,8 +39,9 @@ theme.bg_urgent     = theme.red
 theme.bg_minimize   = theme.background
 theme.bg_systray    = theme.bg_normal
 
-theme.fg_normal     = "#aaaaaa"
-theme.fg_focus      = "#ffffff"
+-- theme.fg_normal     = "#aaaaaa"
+theme.fg_normal     = theme.text
+theme.fg_focus      = theme.text
 theme.fg_urgent     = "#ffffff"
 theme.fg_minimize   = "#ffffff"
 
@@ -63,10 +67,10 @@ theme.border_marked = "#91231c"
 -- Generate taglist squares:
 local taglist_square_size = dpi(4)
 theme.taglist_squares_sel = theme_assets.taglist_squares_sel(
-    taglist_square_size, theme.fg_normal
+    taglist_square_size, theme.main
 )
 theme.taglist_squares_unsel = theme_assets.taglist_squares_unsel(
-    taglist_square_size, theme.fg_normal
+    taglist_square_size, theme.main
 )
 
 -- Variables set for theming notifications:
