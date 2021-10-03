@@ -13,10 +13,27 @@ local theme = {}
 
 theme.font          = "DejaVuSansMono 11"
 
-theme.bg_normal     = "#222222"
-theme.bg_focus      = "#295e93"
-theme.bg_urgent     = "#ff0000"
-theme.bg_minimize   = "#444444"
+-- Define color pallet ----
+
+theme.background    = "#222222"
+theme.foreground    = "#98ccb7"
+
+theme.black         = "#2b303b"
+theme.red           = "#d36a75"
+theme.green         = "#7ae99c"
+theme.yellow        = "#ebc67c"
+theme.blue          = "#438bd3"
+theme.magenta       = "#b470a7"
+theme.cyan          = "#549faa"
+theme.white         = "#c0c5ce"
+
+---------------------------
+
+
+theme.bg_normal     = theme.background
+theme.bg_focus      = theme.background
+theme.bg_urgent     = theme.red
+theme.bg_minimize   = theme.background
 theme.bg_systray    = theme.bg_normal
 
 theme.fg_normal     = "#aaaaaa"
