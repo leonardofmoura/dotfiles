@@ -24,24 +24,24 @@ local battery_text = lain.widget.bat {
             title = "Battery exhausted",
             text = "Shutdown imminent",
             timeout = 15,
-            fg = "#FFFFFF",
-            bg = "#FF0000"
+            fg = beautiful.red,
+            bg = beautiful.bg_normal
         }
 
         bat_notification_low_preset = {
             title = "Battery low",
             text = "Plug the cable!",
             timeout = 15,
-            fg = "#202020",
-            bg = "#f7eb00"
+            fg = beautiful.yellow,
+            bg = beautiful.bg_normal
         }
 
         bat_notification_charged_preset = {
             title   = "Battery full",
             text    = "You can unplug the cable",
             timeout = 15,
-            fg      = "#FFFFFF",
-            bg      = "#00BB00"
+            fg      = beautiful.green,
+            bg      = beautiful.bg_normal
         }
     
     end

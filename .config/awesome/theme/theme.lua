@@ -35,15 +35,15 @@ theme.text          = theme.foreground
 
 theme.bg_normal     = theme.background
 theme.bg_focus      = theme.background
-theme.bg_urgent     = theme.red
+theme.bg_urgent     = theme.background
 theme.bg_minimize   = theme.background
 theme.bg_systray    = theme.bg_normal
 
 -- theme.fg_normal     = "#aaaaaa"
 theme.fg_normal     = theme.text
 theme.fg_focus      = theme.text
-theme.fg_urgent     = "#ffffff"
-theme.fg_minimize   = "#ffffff"
+theme.fg_urgent     = theme.red
+theme.fg_minimize   = theme.text
 
 theme.useless_gap   = dpi(0)
 theme.border_width  = dpi(1)

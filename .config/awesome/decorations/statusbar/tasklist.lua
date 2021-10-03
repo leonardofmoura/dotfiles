@@ -28,40 +28,40 @@ local tasklist_buttons = gears.table.join(
 
 local create_tasklist = function (s)
     local taglist = awful.widget.tasklist {
-        screen  = s,
-        filter  = awful.widget.tasklist.filter.currenttags,
-        buttons = tasklist_buttons,
-        style = {
-            bg_focus = beautiful.bg_normal,
-            fg_focus = beautiful.main
-        },
+        screen   = s,
+        filter   = awful.widget.tasklist.filter.currenttags,
+        buttons  = tasklist_buttons,
+        -- Notice that there is *NO* wibox.wibox prefix, it is a template,
+        -- not a widget instance.
         widget_template = {
             {
-                {
-                    {
-                        {
-                            id     = 'icon_role',
-                            widget = wibox.widget.imagebox,
-                        },
-                        margins = 2,
-                        widget  = wibox.container.margin,
-                    },
-                    {
-                        id     = 'text_role',
-                        widget = wibox.widget.textbox,
-                    },
-                    layout = wibox.layout.fixed.horizontal,
-                },
-                left  = 10,
-                right = 10,
-                widget = wibox.container.margin
+                id     = 'clienticon',
+                widget = awful.widget.clienticon,
             },
-            id     = 'background_role',
-            widget = wibox.container.background,
+            margins = 5,
+            widget  = wibox.container.margin,
+
+            create_callback = function(self, c, index, objects)
+                self:get_children_by_id('clienticon')[1].client = c
+            end,
         },
     }
 
-    return taglist
+    local widget = wibox.widget {
+        {
+            {
+                widget = taglist
+            },
+            bg = beautiful.black,
+            shape = gears.shape.rounded_rect,
+            widget = wibox.container.background
+        },
+        margins = 4,
+        widget = wibox.container.margin
+    }
+    
+
+    return widget
 end
 
 return create_tasklist
