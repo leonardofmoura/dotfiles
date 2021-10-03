@@ -56,7 +56,7 @@ local create_tasklist = function (s)
             shape = gears.shape.rounded_rect,
             widget = wibox.container.background
         },
-        margins = 4,
+        margins = 5,
         widget = wibox.container.margin
     }
     

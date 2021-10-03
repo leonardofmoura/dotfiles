@@ -16,12 +16,7 @@ local separator = {
     layout = wibox.layout.fixed.horizontal,
     separator_pre,
     separator_post,
-}
-
-
--- Create a textclock widget
-mytextclock = wibox.widget.textclock()
- 
+} 
 
 awful.screen.connect_for_each_screen(function(s)
     -- Wallpaper
@@ -47,32 +42,37 @@ awful.screen.connect_for_each_screen(function(s)
     s.mytasklist = create_tasklist(s)
 
     -- Create the wibox
-    s.mywibox = awful.wibar({ position = "top", screen = s, height=35 })
+    s.mywibox = awful.wibar({ position = "top", screen = s, height=40 })
 
     -- Add widgets to the wibox
     s.mywibox:setup {
-        layout = wibox.layout.align.horizontal,
+        layout = wibox.layout.flex.horizontal,
         { -- Left widgets
             layout = wibox.layout.fixed.horizontal,
             mylauncher,
             s.mytaglist,
             s.mypromptbox,
+            s.mytasklist,
         },
-        s.mytasklist, -- Middle widgets
+        widgets.clock, -- Middle widgets
         { -- Right widgets
-            layout = wibox.layout.fixed.horizontal,
-            separator_post,
-            wibox.widget.systray(),
-            separator,
-            widgets.temp,
-            separator,
-            widgets.volume,
-            separator,
-            widgets.bat,
-            separator,
-            mykeyboardlayout,
-            mytextclock,
-            s.mylayoutbox,
+            {
+                layout = wibox.layout.fixed.horizontal,
+                separator_post,
+                wibox.widget.systray(),
+                separator,
+                widgets.temp,
+                separator,
+                widgets.volume,
+                separator,
+                widgets.bat,
+                separator,
+                mykeyboardlayout,
+                -- mytextclock,
+                s.mylayoutbox,
+            },
+            halign = 'right',
+            widget = wibox.container.place
         },
     }    
 end)
