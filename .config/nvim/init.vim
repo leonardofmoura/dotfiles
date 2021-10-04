@@ -1,5 +1,3 @@
-
-
 " -------------- Configurations -------------------------------------
 set nocompatible            " disable compatibility to old-time vi
 set showmatch               " show matching 
@@ -34,5 +32,17 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'} " code completion engine
 Plug 'preservim/nerdcommenter'                  " easy to comment blocks of code
 Plug 'scrooloose/nerdtree'                      " file tree
 Plug 'ryanoasis/vim-devicons'                   " add icons to some plugins
+Plug 'jiangmiao/auto-pairs'                     " automaticaly pair parentheses and other
+Plug 'machakann/vim-sandwich'                   " sandwich things with parentheses
+Plug 'sheerun/vim-polyglot'                     " improved syntax highlihting 
+
+Plug 'dracula/vim'                              " dracula theme
+Plug 'joshdick/onedark.vim'                    " one dark theme
 
 call plug#end()
+
+" -------- Color Schemes ----------------------------------------------
+"colorscheme dracula
+"set termguicolors
+"colorscheme onedark
+colorscheme default
