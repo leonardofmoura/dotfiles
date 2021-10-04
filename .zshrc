@@ -78,11 +78,11 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+ export EDITOR='vim'
+else
+   export EDITOR='nvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -103,9 +103,9 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 alias sicstus='rlwrap ~/$DOCS/MIEIC/3ano/1semestre/PLOG/sicstus4.5.1/bin/sicstus-4.5.1'
 
 # Configs
-alias zshconfig='vim ~/.zshrc'
-alias alconfig='vim ~/.config/alacritty/alacritty.yml'
-alias wmconfig='code ~/.config/awesome/'
+alias zshconfig='$EDITOR ~/.zshrc'
+alias alconfig='$EDITOR ~/.config/alacritty/alacritty.yml'
+alias wmconfig='$EDITOR ~/.config/awesome/'
 
 # Dotfile management
 alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
@@ -153,6 +153,7 @@ alias jclean='rm *.class'
 alias ssha='eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa'
 alias pgadmin='docker run -p 5050:5050 -e "PGADMIN_DEFAULT_EMAIL=admin@admin.com" -e "PGADMIN_DEFAULT_PASSWORD=password" -e "PGADMIN_LISTEN_PORT=5050" --rm --name pgadmin  dpage/pgadmin4'
 alias nemo='nemo . &'
+alias ranger='ranger .'
 
 # add to path
 export PATH=$PATH:~/.local/bin
