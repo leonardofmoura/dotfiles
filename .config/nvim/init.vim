@@ -35,6 +35,7 @@ Plug 'ryanoasis/vim-devicons'                   " add icons to some plugins
 Plug 'jiangmiao/auto-pairs'                     " automaticaly pair parentheses and other
 Plug 'machakann/vim-sandwich'                   " sandwich things with parentheses
 Plug 'sheerun/vim-polyglot'                     " improved syntax highlihting 
+Plug 'akinsho/bufferline.nvim'                  " show buffers as tabs 
 
 Plug 'dracula/vim'                              " dracula theme
 Plug 'joshdick/onedark.vim'                    " one dark theme
@@ -46,3 +47,10 @@ call plug#end()
 "set termguicolors
 "colorscheme onedark
 colorscheme default
+
+" ------- Init Buffernline ------------------------------------------
+lua << EOF
+require("bufferline").setup{}
+EOF
+
+" --------------------------------------------------------------------

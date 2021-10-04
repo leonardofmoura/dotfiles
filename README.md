@@ -11,7 +11,7 @@ I currently run the Arch linux distribution using AwesomeWM using the following 
 - **Browser:** [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 - **Shell:** [Zsh](https://www.zsh.org/) using [Oh-my-zsh](https://ohmyz.sh/)
 - **Terminal:** [Alacritty](https://github.com/alacritty/alacritty)
-- **Text Editors:** [VSCode](https://code.visualstudio.com/) and [Vim](https://www.vim.org/)
+- **Text Editors:** [VSCode](https://code.visualstudio.com/) and [NeoVim](https://neovim.io/)
 - **File Manager:** [Nemo](https://github.com/linuxmint/nemo) and [Ranger](https://github.com/ranger/ranger)
 - **Image viewer:** [Feh](https://feh.finalrewind.org/)
 - **Video player:** [VLC](https://www.videolan.org/vlc/)
@@ -28,6 +28,7 @@ I currently run the Arch linux distribution using AwesomeWM using the following 
 - **GTK theme:** [Arc-Dark](https://github.com/jnsh/arc-theme)
 - **GTK theme selector:** [Lxappearance](https://wiki.lxde.org/en/LXAppearance)
 - **WM Icons:** [FontAwesome](https://fontawesome.com/)
+- **System Font**: [NerdFonts Iosevka](https://www.nerdfonts.com/)
 
 ## Config folder
 
