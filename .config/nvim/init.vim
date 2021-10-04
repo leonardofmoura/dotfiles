@@ -31,6 +31,7 @@ call plug#begin(stdpath('data').'/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " code completion engine
 Plug 'preservim/nerdcommenter'                  " easy to comment blocks of code
 Plug 'scrooloose/nerdtree'                      " file tree
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'  " better colors for nerdtree
 Plug 'ryanoasis/vim-devicons'                   " add icons to some plugins
 Plug 'jiangmiao/auto-pairs'                     " automaticaly pair parentheses and other
 Plug 'machakann/vim-sandwich'                   " sandwich things with parentheses

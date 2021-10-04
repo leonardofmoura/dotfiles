@@ -106,6 +106,7 @@ alias sicstus='rlwrap ~/$DOCS/MIEIC/3ano/1semestre/PLOG/sicstus4.5.1/bin/sicstus
 alias zshconfig='$EDITOR ~/.zshrc'
 alias alconfig='$EDITOR ~/.config/alacritty/alacritty.yml'
 alias wmconfig='$EDITOR ~/.config/awesome/'
+alias nvconfig='$EDITOR ~/.config/nvim/init.vim'
 
 # Dotfile management
 alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
