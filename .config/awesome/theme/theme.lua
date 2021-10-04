@@ -11,7 +11,7 @@ local themes_path = gfs.get_themes_dir()
 
 local theme = {}
 
-theme.font          = "DejaVuSansMono 12"
+theme.font          = "Iosevka 12"
 
 -- Define color pallet ----
 
