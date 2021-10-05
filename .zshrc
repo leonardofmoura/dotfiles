@@ -156,6 +156,7 @@ alias pgadmin='docker run -p 5050:5050 -e "PGADMIN_DEFAULT_EMAIL=admin@admin.com
 alias nemo='nemo . &'
 alias ranger='ranger .'
 alias ra='ranger'
+alias nv='nvim'
 
 # add to path
 export PATH=$PATH:~/.local/bin
