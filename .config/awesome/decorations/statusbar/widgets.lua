@@ -3,7 +3,7 @@ local beautiful = require("beautiful")
 local wibox = require("wibox")
 local naughty = require("naughty")
 local gears = require("gears")
-
+local awful = require("awful")
 
 local markup = lain.util.markup
 
@@ -23,7 +23,6 @@ local get_background = function (color,children)
         },
         margins = 5,
         widget = wibox.container.margin,
-    
     }
 end
 
@@ -141,8 +140,10 @@ local clock = wibox.widget {
     widget = wibox.container.place
 }
 
--------------------------------------
-
+------------ Keyboard Layout --------
+local layout = get_background(beautiful.red, wibox.widget {
+    widget = awful.widget.keyboardlayout()
+});
 
 
 local ret = {
@@ -150,7 +151,8 @@ local ret = {
     temp = therm,
     volume = vol,
     vol_control = vol_text,
-    clock = clock
+    clock = clock,
+    layout = layout,
 }
 
 return ret

@@ -1,5 +1,5 @@
 " declare coc extensions
-let g:coc_global_extensions = ['coc-clangd', 'coc-css', 'coc-html', 'coc-json', 'coc-rust-analyzer', 'coc-sh', 'coc-tsserver', 'coc-xml', 'coc-yaml', 'coc-sql', 'coc-pyright']
+let g:coc_global_extensions = ['coc-clangd', 'coc-css', 'coc-html', 'coc-json', 'coc-rust-analyzer', 'coc-sh', 'coc-tsserver', 'coc-xml', 'coc-yaml', 'coc-sql', 'coc-pyright', 'coc-sumneko-lua']
 
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " unicode characters in the file autoload/float.vim

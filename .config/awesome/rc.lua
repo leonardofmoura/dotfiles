@@ -44,9 +44,6 @@ awful.layout.layouts = require("main.layouts")
 --define the menu
 require("main.menu")
 
--- Keyboard map indicator and switcher
-mykeyboardlayout = awful.widget.keyboardlayout()
-
 -- {{{ Wibar
 -- require set_wallpaper function
 require("decorations.wallpaper")

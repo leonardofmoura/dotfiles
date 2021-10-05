@@ -58,17 +58,11 @@ awful.screen.connect_for_each_screen(function(s)
         { -- Right widgets
             {
                 layout = wibox.layout.fixed.horizontal,
-                separator_post,
                 wibox.widget.systray(),
-                separator,
                 widgets.temp,
-                separator,
                 widgets.volume,
-                separator,
                 widgets.bat,
-                separator,
-                mykeyboardlayout,
-                -- mytextclock,
+                widgets.layout,
                 s.mylayoutbox,
             },
             halign = 'right',
