@@ -15,7 +15,7 @@ I currently run the Arch linux distribution using AwesomeWM using the following 
 - **File Manager:** [Nemo](https://github.com/linuxmint/nemo) and [Ranger](https://github.com/ranger/ranger)
 - **Image viewer:** [Feh](https://feh.finalrewind.org/)
 - **Video player:** [VLC](https://www.videolan.org/vlc/)
-- **Pdf viewer:** [Xreader](https://github.com/linuxmint/xreader/)
+- **Pdf viewer:** [Xreader](https://github.com/linuxmint/xreader/) and [Zathura](https://pwmt.org/projects/zathura/)
 - **App launcher:** [Rofi](https://github.com/davatorium/rofi)
 - **Icon theme:** [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 - **Compositor:** [Picom](https://github.com/yshui/picom)
