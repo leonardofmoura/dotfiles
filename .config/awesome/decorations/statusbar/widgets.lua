@@ -146,6 +146,11 @@ local layout = get_background(beautiful.red, wibox.widget {
 });
 
 
+----------- Systray widgets ----------
+local systray = get_background(beautiful.red, wibox.widget {
+    widget = wibox.widget.systray(),
+})
+
 local ret = {
     bat = battery,
     temp = therm,
@@ -153,6 +158,7 @@ local ret = {
     vol_control = vol_text,
     clock = clock,
     layout = layout,
+    systray = systray,
 }
 
 return ret

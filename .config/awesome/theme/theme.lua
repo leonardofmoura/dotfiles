@@ -37,7 +37,7 @@ theme.bg_normal     = theme.background
 theme.bg_focus      = theme.background
 theme.bg_urgent     = theme.background
 theme.bg_minimize   = theme.background
-theme.bg_systray    = theme.bg_normal
+theme.bg_systray    = theme.black
 
 -- theme.fg_normal     = "#aaaaaa"
 theme.fg_normal     = theme.text
