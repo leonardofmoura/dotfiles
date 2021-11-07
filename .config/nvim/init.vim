@@ -3,3 +3,5 @@ source ~/.config/nvim/general/keybindings.vim   " load keybindings
 source ~/.config/nvim/plugins/setup.vim         "load plugins
 source ~/.config/nvim/general/colorscheme.vim   "load colorscheme
 
+
+
