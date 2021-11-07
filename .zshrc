@@ -146,6 +146,7 @@ alias aapp='cd $DOCS/MIEIC/5ano/1semestre/AAPP'
 alias aos='cd $DOCS/MIEIC/5ano/1semestre/AOS'
 alias odc='cd $DOCS/MIEIC/5ano/1semestre/ODC'
 alias pea='cd $DOCS/MIEIC/5ano/1semestre/PEA'
+alias mtds='cd $DOCS/MIEIC/5ano/1semestre/MTDS'
 
 # Utilities
 alias cl='clear'
