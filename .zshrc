@@ -160,4 +160,4 @@ alias ra='ranger'
 alias nv='nvim'
 
 # add to path
-export PATH=$PATH:~/.local/bin
+export PATH=$PATH:~/.local/bin:~/.local/share/gem/ruby/3.0.0/bin
