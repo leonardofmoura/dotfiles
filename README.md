@@ -4,7 +4,7 @@ My UNIX configuration files. The structure of this repository follows the struct
 
 ## Screenshot
 
-![screenshot](.screenshot/s1.png)
+![screenshot](.screenshots/s1.png)
 
 ## Configuration 
 
