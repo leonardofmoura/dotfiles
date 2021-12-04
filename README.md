@@ -2,6 +2,10 @@
 
 My UNIX configuration files. The structure of this repository follows the structure of my own home folder.
 
+## Screenshot
+
+![screenshot](.screenshot/s1.png)
+
 ## Configuration 
 
 I currently run the Arch linux distribution using AwesomeWM using the following configuration:
