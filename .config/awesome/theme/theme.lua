@@ -20,10 +20,10 @@ theme.foreground    = "#98ccb7"
 
 theme.black         = "#2b303b"
 theme.red           = "#d36a75"
-theme.green         = "#7ae99c"
+theme.green         = "#98c379"
 theme.yellow        = "#ebc67c"
-theme.blue          = "#438bd3"
-theme.magenta       = "#b470a7"
+theme.blue          = "#61afef"
+theme.magenta       = "#c678dd"
 theme.cyan          = "#549faa"
 theme.white         = "#c0c5ce"
 
