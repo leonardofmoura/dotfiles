@@ -7,7 +7,7 @@ nnoremap <C-b> :NvimTreeToggle<CR>
 nnoremap <leader>r :NvimTreeRefresh<CR>
 nnoremap <leader>n :NvimTreeFindFile<CR>
 
-highlight NvimTreeFolderIcon guibg=yellow
+highlight NvimTreeFolderIcon guibg=blue
 
 lua <<EOF
 -- following options are the default
@@ -17,7 +17,7 @@ require'nvim-tree'.setup {
   hijack_netrw        = true,
   open_on_setup       = true,
   ignore_ft_on_setup  = {},
-  auto_close          = false,
+  auto_close          = true,
   open_on_tab         = false,
   hijack_cursor       = true,
   update_cwd          = true,
