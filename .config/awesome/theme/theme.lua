@@ -155,7 +155,7 @@ theme.thermometer_icon = "/home/lmoura/.config/awesome/theme/icons/thermometer-h
 theme.volume_icon = "/home/lmoura/.config/awesome/theme/icons/volume-up.svg"
 
 -- widget colors 
-theme.temp_color = theme.cyan
+theme.temp_color = theme.blue
 theme.volume_color = theme.green
 theme.bat_color = theme.magenta
 

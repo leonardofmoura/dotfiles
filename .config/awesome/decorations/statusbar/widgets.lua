@@ -94,7 +94,7 @@ local temp_text = lain.widget.temp {
 }
 
 -- Create the widget
-local therm = get_background(beautiful.cyan, wibox.widget {
+local therm = get_background(beautiful.temp_color, wibox.widget {
     layout = wibox.layout.fixed.horizontal,
     temp_icon,
     temp_text
