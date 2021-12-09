@@ -15,11 +15,11 @@ I currently run the Arch linux distribution using AwesomeWM using the following 
 - **Browser:** [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 - **Shell:** [Zsh](https://www.zsh.org/) using [Oh-my-zsh](https://ohmyz.sh/)
 - **Terminal:** [Alacritty](https://github.com/alacritty/alacritty)
-- **Text Editors:** [VSCode](https://code.visualstudio.com/) and [NeoVim](https://neovim.io/)
+- **Text Editors:** [NeoVim](https://neovim.io/) and ocationally [VSCode](https://code.visualstudio.com/) 
 - **File Manager:** [Nemo](https://github.com/linuxmint/nemo) and [Ranger](https://github.com/ranger/ranger)
 - **Image viewer:** [Feh](https://feh.finalrewind.org/)
 - **Video player:** [VLC](https://www.videolan.org/vlc/)
-- **Pdf viewer:** [Xreader](https://github.com/linuxmint/xreader/) and [Zathura](https://pwmt.org/projects/zathura/)
+- **Pdf viewer:** [Zathura](https://pwmt.org/projects/zathura/) and [Okular](https://okular.kde.org/) when I need highlighting and notes
 - **App launcher:** [Rofi](https://github.com/davatorium/rofi)
 - **Icon theme:** [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 - **Compositor:** [Picom](https://github.com/yshui/picom)
