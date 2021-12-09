@@ -159,5 +159,10 @@ alias ranger='ranger .'
 alias ra='ranger'
 alias nv='nvim'
 
+# open nvim in a new terminal
+function nvn() {
+    alacritty -e nvim $1 &
+}
+
 # add to path
 export PATH=$PATH:~/.local/bin:~/.local/share/gem/ruby/3.0.0/bin
