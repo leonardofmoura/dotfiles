@@ -12,6 +12,7 @@ Plug 'tpope/vim-fugitive'                                       " git integratio
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}     " syntax highlight and more
 Plug 'kyazdani42/nvim-web-devicons'                             " for file icons
 Plug 'kyazdani42/nvim-tree.lua'                                 " side tree
+Plug 'lervag/vimtex'                                            " better support for latex
 
 
 Plug 'dracula/vim'                                              " dracula theme
@@ -24,3 +25,4 @@ source ~/.config/nvim/plugins/bufferline.vim                    " init bufferlin
 source ~/.config/nvim/plugins/coc.vim                           " init coc
 source ~/.config/nvim/plugins/treesitter.vim                    " load treesitter
 source ~/.config/nvim/plugins/nvim-tree.vim                     " load nvim-tree
+source ~/.config/nvim/plugins/vimtex.vim                        " setup vimtex
