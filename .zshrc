@@ -148,7 +148,7 @@ alias odc='cd $DOCS/MIEIC/5ano/1semestre/ODC'
 alias pea='cd $DOCS/MIEIC/5ano/1semestre/PEA'
 alias mtds='cd $DOCS/MIEIC/5ano/1semestre/MTDS'
 
-alias tese='cd $DOCS/MIEIC/Tese'
+alias tese='cd $DOCS/MIEIC/Thesis'
 
 # Utilities
 alias cl='clear'
