@@ -16,6 +16,7 @@ theme.font          = "Iosevka 12"
 -- Define color pallet ----
 
 theme.background    = "#222222"
+theme.background_t  = "#222222DD"
 theme.foreground    = "#98ccb7"
 
 theme.black         = "#2b303b"
@@ -49,6 +50,9 @@ theme.border_width  = dpi(0)
 theme.border_normal = "#000000"
 theme.border_focus  = "#535d6c"
 theme.border_marked = "#91231c"
+
+theme.hotkeys_modifiers_fg = theme.green
+theme.hotkeys_bg = theme.background_t
 
 -- There are other variable sets
 -- overriding the default one when
