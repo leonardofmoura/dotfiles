@@ -133,12 +133,20 @@ globalkeys = gears.table.join(
 
     awful.key({modkey }, "d", 
         function() 
-            awful.spawn("ranger")
+            awful.spawn(user_vars.terminal .. " -e ranger")
         end,
         {description = "launch ranger", group="apps"}
     ),
 
     awful.key({modkey }, "v", 
+        function() 
+            awful.spawn(user_vars.terminal .. " -e nvim")
+        end,
+        {description = "launch neovim", group="apps"}
+    ),
+
+
+    awful.key({modkey }, "c", 
         function() 
             awful.spawn("code")
         end,
@@ -212,7 +220,7 @@ globalkeys = gears.table.join(
             })
             awesome.restart()
         end,
-        {description = "enable second screen", group="system"}
+        {description = "enable second screen", group="screen"}
     ),
 
     -- Change to single screen (Mirror screens)
@@ -226,6 +234,6 @@ globalkeys = gears.table.join(
             })
             awesome.restart()
         end,
-        {description = "mirror screens", group="system"}
+        {description = "mirror screens", group="screen"}
     )
 )
