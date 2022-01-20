@@ -15,7 +15,7 @@ I currently run the Arch linux distribution using AwesomeWM using the following 
 - **Browser:** [Firefox](https://www.mozilla.org/en-US/firefox/new/)
 - **Shell:** [Zsh](https://www.zsh.org/) using [Oh-my-zsh](https://ohmyz.sh/)
 - **Terminal:** [Alacritty](https://github.com/alacritty/alacritty)
-- **Text Editors:** [NeoVim](https://neovim.io/) and ocationally [VSCode](https://code.visualstudio.com/) 
+- **Text Editors:** [NeoVim](https://neovim.io/) and occasionally [VSCode](https://code.visualstudio.com/) 
 - **File Manager:** [Nemo](https://github.com/linuxmint/nemo) and [Ranger](https://github.com/ranger/ranger)
 - **Image viewer:** [Feh](https://feh.finalrewind.org/)
 - **Video player:** [VLC](https://www.videolan.org/vlc/)
