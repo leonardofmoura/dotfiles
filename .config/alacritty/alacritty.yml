@@ -64,5 +64,6 @@ font:
   normal: 
     family: Iosevka
 
+window:
+  opacity: 0.85
 
-background_opacity: 0.85

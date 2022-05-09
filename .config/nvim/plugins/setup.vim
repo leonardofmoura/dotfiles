@@ -13,7 +13,7 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}     " syntax highlig
 Plug 'kyazdani42/nvim-web-devicons'                             " for file icons
 Plug 'kyazdani42/nvim-tree.lua'                                 " side tree
 Plug 'lervag/vimtex'                                            " better support for latex
-
+Plug 'whonore/Coqtail'                                          " interactive coq development
 
 Plug 'dracula/vim'                                              " dracula theme
 Plug 'joshdick/onedark.vim'                                     " one dark theme
