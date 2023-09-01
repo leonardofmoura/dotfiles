@@ -122,7 +122,8 @@ theme.titlebar_maximized_button_normal_active = themes_path.."default/titlebar/m
 theme.titlebar_maximized_button_focus_active  = themes_path.."default/titlebar/maximized_focus_active.png"
 
 -- theme.wallpaper = "~/Images/Wallpapers/wallhaven-wqqlox.jpg"
-theme.wallpaper = "~/Images/Wallpapers/flat-landscape-minimalism-trees-sunset-river-artwork-22750-3840x2160.jpeg"
+-- theme.wallpaper = "~/Images/Wallpapers/flat-landscape-minimalism-trees-sunset-river-artwork-22750-3840x2160.jpeg"
+theme.wallpaper = "~/Images/Wallpapers/fantasy-landscape-mountains-waterfall-river-fantasy-37721.png"
 
 -- You can use your own layout icons like this:
 theme.layout_fairh = themes_path.."default/layouts/fairhw.png"

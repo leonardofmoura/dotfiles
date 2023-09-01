@@ -61,7 +61,7 @@ awful.screen.connect_for_each_screen(function(s)
                 widgets.systray,
                 widgets.temp,
                 widgets.volume,
-                widgets.bat,
+                -- widgets.bat,
                 widgets.layout,
                 s.mylayoutbox,
             },

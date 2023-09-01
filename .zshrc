@@ -79,7 +79,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
- export EDITOR='vim'
+ export EDITOR='nvim'
 else
    export EDITOR='nvim'
 fi
@@ -109,14 +109,14 @@ alias wmconfig='(cd ~/.config/awesome; $EDITOR ~/.config/awesome/rc.lua)'
 alias nvconfig='(cd ~/.config/nvim; $EDITOR ~/.config/nvim/init.vim)'
 
 # Dotfile management
-alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias config='git --git-dir=$HOME/.dotfiles/.git --work-tree=$HOME'
 alias css='config status -s'
 alias caa='config add -A'
 alias ccm='config commit -m'
 alias cpush='config push'
 
 # Courses
-export DOCS=/home/lmoura/Docs/Documents
+export DOCS=/home/lmoura/Documents
 
 alias esof='cd $DOCS/MIEIC/3ano/1semestre/ESOF'
 alias laig='cd $DOCS/MIEIC/3ano/1semestre/LAIG'
@@ -148,13 +148,13 @@ alias odc='cd $DOCS/MIEIC/5ano/1semestre/ODC'
 alias pea='cd $DOCS/MIEIC/5ano/1semestre/PEA'
 alias mtds='cd $DOCS/MIEIC/5ano/1semestre/MTDS'
 
-alias tese='cd $DOCS/MIEIC/Thesis'
+alias tese='cd $DOCS/Thesis'
 
 # Utilities
 alias cl='clear'
 alias jcall='javac *.java'
 alias jclean='rm *.class'
-alias ssha='eval $(ssh-agent -s) && ssh-add ~/.ssh/id_rsa'
+alias ssha='eval $(ssh-agent -s) && ssh-add ~/.ssh/id_ed25519'
 alias pgadmin='docker run -p 5050:5050 -e "PGADMIN_DEFAULT_EMAIL=admin@admin.com" -e "PGADMIN_DEFAULT_PASSWORD=password" -e "PGADMIN_LISTEN_PORT=5050" --rm --name pgadmin  dpage/pgadmin4'
 alias nemo='nemo . &'
 alias ranger='ranger .'
@@ -167,4 +167,4 @@ function nvn() {
 }
 
 # add to path
-export PATH=$PATH:~/.local/bin:~/.local/share/gem/ruby/3.0.0/bin
+export PATH=$PATH:~/.local/bin:$(yarn global bin)
