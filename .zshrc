@@ -104,9 +104,11 @@ alias sicstus='rlwrap ~/$DOCS/MIEIC/3ano/1semestre/PLOG/sicstus4.5.1/bin/sicstus
 
 # Configs
 alias zshconfig='$EDITOR ~/.zshrc'
-alias alconfig='(cd ~/.config/alacritty; $EDITOR ~/.config/alacritty/alacritty.yml)'
-alias wmconfig='(cd ~/.config/awesome; $EDITOR ~/.config/awesome/rc.lua)'
-alias nvconfig='(cd ~/.config/nvim; $EDITOR ~/.config/nvim/init.vim)'
+alias alconfig='(cd ~/.config/alacritty; $EDITOR alacritty.toml)'
+alias awconfig='(cd ~/.config/awesome; $EDITOR rc.lua)'
+alias hyprconfig='(cd ~/.config/hypr; $EDITOR hyprland.conf)'
+alias waybarconfig='(cd ~/.config/waybar; $EDITOR config.jsonc)'
+alias nvconfig='(cd ~/.config/nvim; $EDITOR init.vim)'
 
 # Dotfile management
 alias config='git --git-dir=$HOME/.dotfiles/.git --work-tree=$HOME'
