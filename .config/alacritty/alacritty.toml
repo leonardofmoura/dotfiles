@@ -1,0 +1,18 @@
+# Import colorscheme
+import = [
+    "~/.config/alacritty/themes/nord.toml"
+]
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 13
+
+[font.normal]
+family = "FiraCodeNerdFont"
+style = "Medium"
+
+[window]
+opacity = 0.85
+
