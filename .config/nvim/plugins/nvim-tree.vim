@@ -65,6 +65,7 @@ require'nvim-tree'.setup {
       "README.md", 
       "Makefile", 
       "MAKEFILE", 
+      "init.vim"
     }
   },
 }
