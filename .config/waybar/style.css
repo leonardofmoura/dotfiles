@@ -1,14 +1,18 @@
+@import "themes/nord.css";
+
+
 * {
-    /* `otf-font-awesome` is required to be installed for icons */
     font-family: FiraCodeNerdFont;
+    font-weight: 500;
     font-size: 17px;
-    border-radius: 13px;
-    margin-top: 3px;
+    border-radius: 10px;
+	margin-top: 4px;
+    padding: 1px;
+    color: @theme-fg;
 }
 
 window#waybar {
     background: transparent;
-    color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
 }
@@ -26,18 +30,23 @@ window#waybar.solo {
 }
 */
 
-window#waybar.termite {
-    background-color: #3F3F3F;
+.modules-left {
+    margin-left: 20px;
+    background-color: @theme-bg;
+    padding: 0px;
+    border: none;
 }
 
-window#waybar.chromium {
-    background-color: #000000;
-    border: none;
+#custom-system-icon {
+    font-size: 28px;
+	padding-left: 10px;
+	padding-right: 10px;
+    color: @theme-cyan;
 }
 
 button {
     /* Use box-shadow instead of border so the text isn't offset */
-    box-shadow: inset 0 -3px transparent;
+    /*box-shadow: inset 0 -2px @theme-blue;*/
     /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 0;
@@ -46,26 +55,31 @@ button {
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
-    box-shadow: inset 0 -3px #ffffff;
+    /*box-shadow: inset 0 -3px #ffffff;*/
+}
+
+button.active {
+    color: @theme-blue;
 }
 
 #workspaces button {
-    padding: 0 5px;
-    background-color: transparent;
-    color: #ffffff;
+    margin-right: 13px;
+    margin-bottom: 4px;
+    padding-bottom: 1px;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
+
 }
 
 #workspaces button.focused {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
+    color: @theme-blue;
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    color: @theme-red;
 }
 
 #mode {
@@ -73,48 +87,27 @@ button:hover {
     border-bottom: 3px solid #ffffff;
 }
 
-#clock,
-#battery,
-#cpu,
-#memory,
-#disk,
-#temperature,
-#backlight,
-#network,
-#pulseaudio,
-#wireplumber,
-#custom-media,
-#tray,
-#mode,
-#idle_inhibitor,
-#scratchpad,
-#mpd {
-    padding: 0 10px;
-    color: #ffffff;
-}
-
 #window,
 #workspaces {
     margin: 0 4px;
 }
 
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left > widget:first-child > #workspaces {
-    margin-left: 0;
-}
-
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child > #workspaces {
-    margin-right: 0;
+.modules-center {
+    background-color: @theme-bg;
 }
 
 #clock {
-    background-color: #64727D;
+    padding-right: 5px;
+    padding-left: 15px;
 }
 
-#battery {
-    background-color: #ffffff;
-    color: #000000;
+.modules-right {
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+    background-color: @theme-bg;
+
 }
 
 label:focus {
@@ -122,81 +115,59 @@ label:focus {
 }
 
 #cpu {
-    background-color: #2ecc71;
-    color: #000000;
+
 }
 
 #memory {
-    background-color: #9b59b6;
+
 }
 
 #disk {
-    background-color: #964B00;
+
 }
 
 #network {
-    background-color: #2980b9;
+
 }
 
 #network.disconnected {
-    background-color: #f53c3c;
+
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
-    color: #000000;
+
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
+
 }
 
 #wireplumber {
-    background-color: #fff0f5;
-    color: #000000;
+
 }
 
 #wireplumber.muted {
-    background-color: #f53c3c;
+
 }
 
 #custom-media {
-    background-color: #66cc99;
-    color: #2a5c45;
-    min-width: 100px;
+
 }
 
 #custom-media.custom-spotify {
-    background-color: #66cc99;
 }
 
 #custom-media.custom-vlc {
-    background-color: #ffa000;
 }
 
-#custom-launcher {
-    font-size: 24px;
-	margin-top: 6px;
-	margin-left: 8px;
-	padding-left: 10px;
-	padding-right: 18px;
-	border-radius: 10px;
-	transition: none;
-    color: #89DCEB;
-    background: #161320;
-}
 
 #temperature {
-    background-color: #f0932b;
 }
 
 #temperature.critical {
-    background-color: #eb4d4b;
 }
 
 #tray {
-    background-color: #2980b9;
 }
 
 #tray > .passive {
@@ -218,20 +189,15 @@ label:focus {
 }
 
 #mpd {
-    background-color: #66cc99;
-    color: #2a5c45;
 }
 
 #mpd.disconnected {
-    background-color: #f53c3c;
 }
 
 #mpd.stopped {
-    background-color: #90b1b1;
 }
 
 #mpd.paused {
-    background-color: #51a37a;
 }
 
 #language {

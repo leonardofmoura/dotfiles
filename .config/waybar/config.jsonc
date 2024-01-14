@@ -1,10 +1,10 @@
 {
     "layer": "top",
     "position": "top",
-    "height": 35, 
-    "spacing": 10, // Gaps between modules (4px)
+    "height": 55, 
+    "spacing": 25, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["custom/launcher", "hyprland/workspaces", "hyprland/window"],
+    "modules-left": ["custom/system-icon", "hyprland/workspaces"],
     "modules-center": ["clock"],
     "modules-right": ["pulseaudio", "network","cpu", "memory" ,"temperature"],
 
@@ -13,7 +13,19 @@
         "all-outputs": true,
         "disable-scroll": true,
         "format": "{icon}",
-        "on-click": "activete"
+        "on-click": "activate",
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": []
+        },
+        "format-icons": {
+            "1": " Web",
+            "2": " Term",
+            "3": " Code",
+            "4": " Music"
+        }
     },
 
     "hyprland/window": {
@@ -27,9 +39,8 @@
     },
 
     "clock": {
-        "format": "{:%H:%M}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format":"󰃭 {:%d %b %Y   %H:%M} ",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
     },
 
     "cpu": {
@@ -80,7 +91,7 @@
         "on-click": "pavucontrol"
     },
 
-    "custom/launcher": {
+    "custom/system-icon": {
         "format": ""
     },
 
