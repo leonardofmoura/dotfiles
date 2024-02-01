@@ -15,8 +15,11 @@ Plug 'kyazdani42/nvim-tree.lua'                                 " side tree
 Plug 'lervag/vimtex'                                            " better support for latex
 Plug 'whonore/Coqtail'                                          " interactive coq development
 
+" colorschemes
 Plug 'navarasu/onedark.nvim'                                    " onedark
 Plug 'shaunsingh/nord.nvim'                                     " nord theme
+Plug 'ellisonleao/gruvbox.nvim'                                 " gruvbox
+Plug 'sainnhe/gruvbox-material'                                 " gruvbox material
 
 call plug#end()
 
@@ -29,3 +32,4 @@ source ~/.config/nvim/plugins/vimtex.vim                        " setup vimtex
 source ~/.config/nvim/plugins/onedark.vim                       " setup colorscheme
 source ~/.config/nvim/plugins/lualine.vim                       " lualinne
 source ~/.config/nvim/plugins/nord.vim                          " setup nord
+source ~/.config/nvim/plugins/gruvbox-material.vim              " setup gruvbox-material

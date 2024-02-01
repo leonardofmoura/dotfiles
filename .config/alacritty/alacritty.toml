@@ -1,6 +1,6 @@
 # Import colorscheme
 import = [
-    "~/.config/alacritty/themes/nord.toml"
+    "~/.config/alacritty/themes/gruvbox.toml"
 ]
 
 [env]

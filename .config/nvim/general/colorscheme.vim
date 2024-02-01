@@ -1,3 +1,3 @@
 set termguicolors
-colorscheme nord
+colorscheme gruvbox
 

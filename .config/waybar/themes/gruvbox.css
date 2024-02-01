@@ -1,0 +1,12 @@
+@define-color theme-bg rgb(40,40,40);
+@define-color theme-fg rgb(235,219,178);
+@define-color theme-black rgb(40,40,40);
+@define-color theme-blue rgb(131,165,152);
+@define-color theme-cyan rgb(142,192,124);
+@define-color theme-green rgb(184,187,38);
+@define-color theme-magenta rgb(211,134,155);
+@define-color theme-red rgb(251,73,52);
+@define-color theme-white rgb(251,241,199);
+@define-color theme-yellow rgb(250,189,47);
+@define-color theme-light-black rgb(60,56,54);
+
