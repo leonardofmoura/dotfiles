@@ -8,7 +8,7 @@
     border-radius: 10px;
 	margin-top: 4px;
     padding: 1px;
-    color: @theme-fg;
+    /*color: @theme-fg;*/
 }
 
 window#waybar {
@@ -41,25 +41,23 @@ window#waybar.solo {
     font-size: 28px;
 	padding-left: 10px;
 	padding-right: 10px;
-    color: @theme-cyan;
+    color: @theme-blue;
 }
 
 button {
     /* Use box-shadow instead of border so the text isn't offset */
-    /*box-shadow: inset 0 -2px @theme-blue;*/
     /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 0;
+    box-shadow: inset 0 -2px @theme-bg;
+    color: @theme-fg;
+    transition: box-shadow 0.1s ease-in-out;
+    transition: color 0.1s ease-in-out;
 }
 
 /* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
 button:hover {
     background: inherit;
-    /*box-shadow: inset 0 -3px #ffffff;*/
-}
-
-button.active {
-    color: @theme-blue;
 }
 
 #workspaces button {
@@ -71,11 +69,12 @@ button.active {
 }
 
 #workspaces button:hover {
-
+    box-shadow: inset 0 -2px @theme-fg;
 }
 
-#workspaces button.focused {
-    color: @theme-blue;
+#workspaces button.active {
+    box-shadow: inset 0 -2px @theme-yellow;
+    color: @theme-yellow;
 }
 
 #workspaces button.urgent {
@@ -97,6 +96,7 @@ button.active {
 }
 
 #clock {
+    color: @theme-fg;
     padding-right: 5px;
     padding-left: 15px;
 }
@@ -115,11 +115,11 @@ label:focus {
 }
 
 #cpu {
-
+    color: @theme-blue;
 }
 
 #memory {
-
+    color: @theme-yellow;
 }
 
 #disk {
@@ -127,7 +127,7 @@ label:focus {
 }
 
 #network {
-
+    color: @theme-blue;
 }
 
 #network.disconnected {
@@ -135,7 +135,7 @@ label:focus {
 }
 
 #pulseaudio {
-
+    color: @theme-orange;
 }
 
 #pulseaudio.muted {

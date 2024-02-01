@@ -6,7 +6,7 @@
     // Choose the order of the modules
     "modules-left": ["custom/system-icon", "hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "network","cpu", "memory" ,"temperature"],
+    "modules-right": ["pulseaudio","cpu", "memory" ,"temperature"],
 
     "hyprland/workspaces": {
         "active-only": false,
@@ -44,12 +44,12 @@
     },
 
     "cpu": {
-        "format": "{usage}% ",
+        "format": " {usage}%",
         "tooltip": false
     },
 
     "memory": {
-        "format": "{}% "
+        "format": " {}%"
     },
 
     "temperature": {
@@ -73,10 +73,10 @@
 
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
+        "format": "{icon} {volume}%",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-bluetooth-muted": " {icon}",
+        "format-muted": "",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
