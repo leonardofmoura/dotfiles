@@ -5,18 +5,18 @@
  ***********************************************/
 
 * {
-    background:                 #222222;
-    background-t:               #222222f2;
-    foreground:                 #98ccb7;
+    background:                 #282828;
+    background-t:               #282828f2;
+    foreground:                 #ebdbb2;
 
-    theme-black:                #2b303b;
-    theme-red:                  #d36a75;
-    theme-green:                #98c379;
-    theme-yellow:               #ebc67c;
-    theme-blue:                 #61afef;
-    theme-magenta:              #c678dd;
-    theme-cyan:                 #549faa;
-    theme-white:                #c0c5ce;
+    theme-black:                #504945;
+    theme-red:                  #fb4934;
+    theme-green:                #b8bb26;
+    theme-yellow:               #fabd2f;
+    theme-blue:                 #83a598;
+    theme-magenta:              #d3869b;
+    theme-cyan:                 #8ec07c;
+    theme-white:                #ebdbb2;
 
     accent-bg:                  @theme-black;
 
@@ -163,13 +163,13 @@ entry {
 }
 prompt {
     spacing:    0;
-    text-color: @theme-green;
+    text-color: @theme-yellow;
 }
 inputbar {
     children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
 }
 textbox-prompt-colon {
-    text-color: @theme-green;
+    text-color: @theme-yellow;
     expand:     false;
     str:        ":";
     margin:     0px 0.3em 0em 0em ;
