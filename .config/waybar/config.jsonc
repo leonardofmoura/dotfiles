@@ -6,7 +6,7 @@
     // Choose the order of the modules
     "modules-left": ["custom/system-icon", "hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio","cpu", "memory" ,"temperature"],
+    "modules-right": ["tray","pulseaudio","cpu", "memory" ,"temperature"],
 
     "hyprland/workspaces": {
         "active-only": false,
