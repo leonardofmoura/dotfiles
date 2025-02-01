@@ -1,5 +1,5 @@
 {
-    "layer": "top",
+    "layer": "bottom",
     "position": "top",
     "height": 55, 
     "spacing": 25, // Gaps between modules (4px)
