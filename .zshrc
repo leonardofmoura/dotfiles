@@ -165,7 +165,7 @@ alias nv='nvim'
 
 # open nvim in a new terminal
 function nvn() {
-    alacritty -e nvim $1 &
+    kitty -e nvim $1 &
 }
 
 # add to path
