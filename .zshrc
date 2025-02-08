@@ -108,7 +108,7 @@ alias alconfig='(cd ~/.config/alacritty; $EDITOR alacritty.toml)'
 alias awconfig='(cd ~/.config/awesome; $EDITOR rc.lua)'
 alias hyprconfig='(cd ~/.config/hypr; $EDITOR hyprland.conf)'
 alias waybarconfig='(cd ~/.config/waybar; $EDITOR config.jsonc)'
-alias nvconfig='(cd ~/.config/nvim; $EDITOR init.vim)'
+alias nvconfig='(cd ~/.config/nvim; $EDITOR init.lua)'
 
 # Dotfile management
 alias config='git --git-dir=$HOME/.dotfiles/.git --work-tree=$HOME'
