@@ -8,13 +8,13 @@ return {
     "williamboman/mason-lspconfig.nvim",
     opts = {
       ensure_installed = {
-        "lua_ls",
-        "clangd",
+        -- "lua_ls",
+        -- "clangd",
         "ts_ls",
-        "texlab",
+        -- "texlab",
         "marksman",
         "pyright",
-        "rust_analyzer"
+        -- "rust_analyzer"
       }
     },
   },
@@ -95,6 +95,14 @@ return {
 
   {
     "neovim/nvim-lspconfig",
+    opts = {
+      servers = {
+        clangd = { mason = false },
+        texlab = { mason = false },
+        lua_ls = { mason = false },
+        rust_analyzer = { mason = false },
+      },
+    },
     config = function()
       local lspconfig = require("lspconfig")
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
