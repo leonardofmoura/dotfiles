@@ -112,5 +112,9 @@ return {
     "folke/zen-mode.nvim",
     opts = {}
   },
+
+  {
+    "preservim/vim-pencil",
+  }
 }
 
