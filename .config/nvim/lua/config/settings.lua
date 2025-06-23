@@ -27,6 +27,7 @@ opt.smoothscroll = true     -- Enable smooth scrolling (if supported)
 opt.wrap = true             -- Enable line wrapping
 opt.linebreak = true        -- Wrap lines at word boundaries instead of breaking mid-word
 opt.colorcolumn = "80"      -- Highlight the 80th column to guide line length
+opt.showbreak = "󱞩 "
 
 opt.undofile = true         -- Enable persistent undo (saves undo history)
 
@@ -41,3 +42,4 @@ vim.api.nvim_create_autocmd("FileType", {
     vim.opt.spelllang = "en,pt"
   end,
 })
+
