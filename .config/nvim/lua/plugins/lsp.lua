@@ -14,7 +14,9 @@ return {
         "texlab",
         "marksman",
         "pyright",
-        "rust_analyzer"
+        "rust_analyzer",
+        "cssls",
+        "html",
       }
     },
   },
@@ -106,6 +108,8 @@ return {
       lspconfig.marksman.setup({capabilities = capabilities})
       lspconfig.pyright.setup({capabilities = capabilities})
       lspconfig.rust_analyzer.setup({capabilities = capabilities})
+      lspconfig.cssls.setup({capabilities = capabilities})
+      lspconfig.html.setup({capabilities = capabilities})
 
       -- setup keymaps
       vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {}) -- go to definition
