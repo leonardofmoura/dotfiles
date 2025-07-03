@@ -22,6 +22,8 @@ return {
 
   {
     "nvim-treesitter/nvim-treesitter",
+    dependencies = { "OXY2DEV/markview.nvim" },
+    lazy = false,
     build = ":TSUpdate",
     config = function()
       local configs = require("nvim-treesitter.configs")
@@ -106,6 +108,7 @@ return {
   {
     "OXY2DEV/markview.nvim",
     lazy = false,
+    priority = 49,
   },
 
   {
@@ -115,11 +118,19 @@ return {
 
   {
     "folke/zen-mode.nvim",
-    opts = {}
+    opts = {
+      plugins = {
+        twilight = { enabled = false }
+      }
+    }
   },
 
   {
     "preservim/vim-pencil",
+  },
+
+  {
+    "bullets-vim/bullets.vim"
   },
 }
 

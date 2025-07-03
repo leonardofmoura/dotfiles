@@ -99,9 +99,6 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# Actual aliases
-alias sicstus='rlwrap ~/$DOCS/MIEIC/3ano/1semestre/PLOG/sicstus4.5.1/bin/sicstus-4.5.1'
-
 # Configs
 alias zshconfig='$EDITOR ~/.zshrc'
 alias alconfig='(cd ~/.config/alacritty; $EDITOR alacritty.toml)'
@@ -117,40 +114,15 @@ alias caa='config add -A'
 alias ccm='config commit -m'
 alias cpush='config push'
 
-# Courses
-export DOCS=/home/lmoura/Documents
+# Notes
+export NOTES=~/Notes
 
-alias esof='cd $DOCS/MIEIC/3ano/1semestre/ESOF'
-alias laig='cd $DOCS/MIEIC/3ano/1semestre/LAIG'
-alias ltw='cd $DOCS/MIEIC/3ano/1semestre/LTW'
-alias plog='cd $DOCS/MIEIC/3ano/1semestre/PLOG'
-alias rcom='cd $DOCS/MIEIC/3ano/1semestre/RCOM'
+alias notes='cd $NOTES'
+alias note='cd $NOTES; nvim +"set filetype=markdown"'
 
-alias sdis='cd $DOCS/MIEIC/3ano/2semestre/SDIS'
-alias lbaw='cd $DOCS/MIEIC/3ano/2semestre/LBAW'
-alias iart='cd $DOCS/MIEIC/3ano/2semestre/IART'
-alias ppin='cd $DOCS/MIEIC/3ano/2semestre/PPIN'
-alias comp='cd $DOCS/MIEIC/3ano/2semestre/COMP'
-
-alias ldso='cd $DOCS/MIEIC/4ano/1semestre/LDSO'
-alias aiad='cd $DOCS/MIEIC/4ano/1semestre/AIAD'
-alias sinf='cd $DOCS/MIEIC/4ano/1semestre/SINF'
-alias gemp='cd $DOCS/MIEIC/4ano/1semestre/GEMP'
-alias mfes='cd $DOCS/MIEIC/4ano/1semestre/MFES'
-
-alias ssin='cd $DOCS/MIEIC/4ano/2semestre/SSIN'
-alias mark='cd $DOCS/MIEIC/4ano/2semestre/MARK'
-alias asso='cd $DOCS/MIEIC/4ano/2semestre/ASSO'
-alias iope='cd $DOCS/MIEIC/4ano/2semestre/IOPE'
-alias lgp='cd $DOCS/MIEIC/4ano/2semestre/LGP'
-
-alias aapp='cd $DOCS/MIEIC/5ano/1semestre/AAPP'
-alias aos='cd $DOCS/MIEIC/5ano/1semestre/AOS'
-alias odc='cd $DOCS/MIEIC/5ano/1semestre/ODC'
-alias pea='cd $DOCS/MIEIC/5ano/1semestre/PEA'
-alias mtds='cd $DOCS/MIEIC/5ano/1semestre/MTDS'
-
-alias tese='cd $DOCS/Thesis'
+function nnote() {
+  kitty -e sh -c 'cd $NOTES; nvim +"set filetype=markdown"' &
+}
 
 # Utilities
 alias cl='clear'
