@@ -22,6 +22,8 @@ return {
 
   {
     "nvim-treesitter/nvim-treesitter",
+    dependencies = { "OXY2DEV/markview.nvim" },
+    lazy = false,
     build = ":TSUpdate",
     config = function()
       local configs = require("nvim-treesitter.configs")
@@ -93,14 +95,20 @@ return {
     opts = {},
   },
 
+  -- {
+  --   'MeanderingProgrammer/render-markdown.nvim',
+  --   -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' }, -- if you use the mini.nvim suite
+  --   -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' }, -- if you use standalone mini plugins
+  --   dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
+  --   ---@module 'render-markdown'
+  --   ---@type render.md.UserConfig
+  --   opts = {},
+  -- },
+
   {
-    'MeanderingProgrammer/render-markdown.nvim',
-    -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' }, -- if you use the mini.nvim suite
-    -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' }, -- if you use standalone mini plugins
-    dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
-    ---@module 'render-markdown'
-    ---@type render.md.UserConfig
-    opts = {},
+    "OXY2DEV/markview.nvim",
+    lazy = false,
+    priority = 49,
   },
 
   {
@@ -110,11 +118,19 @@ return {
 
   {
     "folke/zen-mode.nvim",
-    opts = {}
+    opts = {
+      plugins = {
+        twilight = { enabled = false }
+      }
+    }
   },
 
   {
     "preservim/vim-pencil",
-  }
+  },
+
+  {
+    "bullets-vim/bullets.vim"
+  },
 }
 
