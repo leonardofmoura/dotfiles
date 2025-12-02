@@ -97,19 +97,52 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      local lspconfig = require("lspconfig")
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
+      vim.lsp.config('lua_ls', {
+        capabilities = capabilities
+      })
+      vim.lsp.enable('lua_ls')
 
-      lspconfig.lua_ls.setup({capabilities = capabilities})
-      lspconfig.clangd.setup({capabilities = capabilities})
-      lspconfig.ts_ls.setup({capabilities = capabilities})
-      lspconfig.texlab.setup({capabilities = capabilities})
-      lspconfig.marksman.setup({capabilities = capabilities})
-      lspconfig.pyright.setup({capabilities = capabilities})
-      lspconfig.rust_analyzer.setup({capabilities = capabilities})
-      lspconfig.cssls.setup({capabilities = capabilities})
-      lspconfig.html.setup({capabilities = capabilities})
+      vim.lsp.config('clangd', {
+        capabilities = capabilities
+      })
+      vim.lsp.enable('clangd')
+
+      vim.lsp.config('ts_ls', {
+        capabilities = capabilities
+      })
+      vim.lsp.enable('ts_ls')
+
+      vim.lsp.config('texlab', {
+        capabilities = capabilities
+      })
+      vim.lsp.enable('texlab')
+
+      vim.lsp.config('marksman', {
+        capabilities = capabilities
+      })
+      vim.lsp.enable('marksman')
+
+      vim.lsp.config('pyright', {
+        capabilities = capabilities
+      })
+      vim.lsp.enable('pyright')
+
+      vim.lsp.config('rust_analyzer', {
+        capabilities = capabilities
+      })
+      vim.lsp.enable('rust_analyzer')
+
+      vim.lsp.config('cssls', {
+        capabilities = capabilities
+      })
+      vim.lsp.enable('cssls')
+
+      vim.lsp.config('html', {
+        capabilities = capabilities
+      })
+      vim.lsp.enable('html')
 
       -- setup keymaps
       vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {}) -- go to definition
