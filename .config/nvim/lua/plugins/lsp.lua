@@ -15,8 +15,10 @@ return {
         "marksman",
         "pyright",
         "rust_analyzer",
+        "tinymist",
         "cssls",
         "html",
+        "zls",
       }
     },
   },
@@ -143,6 +145,16 @@ return {
         capabilities = capabilities
       })
       vim.lsp.enable('html')
+
+      vim.lsp.config('zls', {
+        capabilities = capabilities
+      })
+      vim.lsp.enable('zls')
+
+      vim.lsp.config('tinymist', {
+        capabilities = capabilities
+      })
+      vim.lsp.enable('tinymist')
 
       -- setup keymaps
       vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {}) -- go to definition
