@@ -22,7 +22,15 @@ return {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     opts = {
-      theme = "gruvbox-material"
+      theme = "gruvbox-material",
+      sections = {
+        lualine_x = {
+          { GetSessionProgress },
+          'encoding',
+          'fileformat',
+          'filetype'
+        }
+      }
     }
   },
 
