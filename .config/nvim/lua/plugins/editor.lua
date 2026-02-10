@@ -122,7 +122,8 @@ return {
     opts = {
       plugins = {
         options = {
-          laststatus = 3,
+          ruler = true,
+          showcmd = true,
         },
         twilight = { enabled = false }
       }
