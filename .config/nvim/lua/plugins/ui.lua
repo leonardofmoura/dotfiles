@@ -3,10 +3,10 @@ return {
   {
     "ellisonleao/gruvbox.nvim",
     priority = 1000,
-    lazy = false,
-    config = function()
-      vim.cmd.colorscheme "gruvbox"
-    end
+    opts = {
+      terminal_colors = true,
+      transparent_mode = false,
+    }
   },
 
   {
@@ -22,6 +22,7 @@ return {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     opts = {
+      theme = "tokyonight",
       sections = {
         lualine_x = {
           { GetSessionProgress },
@@ -31,6 +32,13 @@ return {
         }
       }
     }
+  },
+
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
   },
 
   {
