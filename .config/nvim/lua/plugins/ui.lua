@@ -25,7 +25,7 @@ return {
       theme = "tokyonight",
       sections = {
         lualine_x = {
-          { GetSessionProgress },
+          { require("writing-sessions").get_statusline_info },
           'encoding',
           'fileformat',
           'filetype'
