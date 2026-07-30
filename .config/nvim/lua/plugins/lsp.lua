@@ -16,6 +16,7 @@ return {
         "pyright",
         "rust_analyzer",
         "tinymist",
+        "svelte",
         "cssls",
         "html",
         "zls",
@@ -97,6 +98,18 @@ return {
   },
 
   {
+    'nvim-flutter/flutter-tools.nvim',
+    lazy = false,
+    dependencies = {
+        'nvim-lua/plenary.nvim',
+        'stevearc/dressing.nvim', -- optional for vim.ui.select
+    },
+    opts = {
+      fvm = true,
+    }
+  },
+
+  {
     "neovim/nvim-lspconfig",
     config = function()
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
@@ -156,10 +169,16 @@ return {
       })
       vim.lsp.enable('tinymist')
 
+      vim.lsp.config('svelte', {
+        capabilities = capabilities
+      })
+      vim.lsp.enable('svelte')
+
       -- setup keymaps
       vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {}) -- go to definition
-      vim.keymap.set('n', 'K', vim.lsp.buf.hover, {}) -- Hover documentation
+      vim.keymap.set('n', '<leader>h', vim.lsp.buf.hover, {}) -- Hover documentation
       vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {}) -- code action
+      vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, {}) -- open diagnostic description
     end
   },
 }

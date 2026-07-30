@@ -22,54 +22,61 @@ return {
 
   {
     "nvim-treesitter/nvim-treesitter",
-    dependencies = { "OXY2DEV/markview.nvim" },
     lazy = false,
+    branch = "main",
     build = ":TSUpdate",
     config = function()
-      local configs = require("nvim-treesitter.configs")
+      local ts = require("nvim-treesitter")
+      ts.setup({})
 
-      configs.setup({
-        highlight = { enable = true},
-        indent = { enable = true },
-        sync_install = false,
-        ensure_installed = {
-          "bash",
-          "c",
-          "cpp",
-          "css",
-          "diff",
-          "dockerfile",
-          "doxygen",
-          "go",
-          "groovy",
-          "html",
-          "java",
-          "javascript",
-          "jsdoc",
-          "json",
-          "jsonc",
-          "latex",
-          "lua",
-          "luadoc",
-          "luap",
-          "make",
-          "markdown",
-          "markdown_inline",
-          "printf",
-          "python",
-          "query",
-          "regex",
-          "rust",
-          "scss",
-          "toml",
-          "tsx",
-          "typescript",
-          "vim",
-          "vimdoc",
-          "xml",
-          "yaml",
-        }
-      })  
+      local ensure_installed = {
+        "bash",
+        "c",
+        "cpp",
+        "css",
+        "diff",
+        "dockerfile",
+        "doxygen",
+        "go",
+        "groovy",
+        "html",
+        "java",
+        "javascript",
+        "jsdoc",
+        "json",
+        "jsonc",
+        "latex",
+        "lua",
+        "luadoc",
+        "luap",
+        "make",
+        "markdown",
+        "markdown_inline",
+        "printf",
+        "python",
+        "query",
+        "regex",
+        "rust",
+        "scss",
+        "toml",
+        "tsx",
+        "typescript",
+        "vim",
+        "vimdoc",
+        "xml",
+        "yaml",
+      }
+
+      ts.install(ensure_installed)
+
+      -- enable native treessitter features depending on filetype
+      vim.api.nvim_create_autocmd("FileType", {
+        pattern = {'<filetype>'},
+        callback = function()
+          vim.treesitter.start() -- enable treesitter highlinghting
+          vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()" -- enable indentation
+        end,
+      })
     end
   },
 
@@ -96,16 +103,6 @@ return {
     opts = {},
   },
 
-  -- {
-  --   'MeanderingProgrammer/render-markdown.nvim',
-  --   -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' }, -- if you use the mini.nvim suite
-  --   -- dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.icons' }, -- if you use standalone mini plugins
-  --   dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' }, -- if you prefer nvim-web-devicons
-  --   ---@module 'render-markdown'
-  --   ---@type render.md.UserConfig
-  --   opts = {},
-  -- },
-
   {
     "OXY2DEV/markview.nvim",
     lazy = false,
@@ -122,7 +119,8 @@ return {
     opts = {
       plugins = {
         options = {
-          laststatus = 3,
+          ruler = true,
+          showcmd = true,
         },
         twilight = { enabled = false }
       }

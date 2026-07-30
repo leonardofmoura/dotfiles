@@ -119,6 +119,7 @@ export NOTES=~/Notes
 
 alias notes='cd $NOTES'
 alias note='cd $NOTES; nvim +"set filetype=markdown"'
+alias todo='cd $NOTES; nvim todo.md'
 
 function nnote() {
   kitty -e sh -c 'cd $NOTES; nvim +"set filetype=markdown"' &
@@ -129,7 +130,6 @@ alias cl='clear'
 alias jcall='javac *.java'
 alias jclean='rm *.class'
 alias ssha='eval $(ssh-agent -s) && ssh-add ~/.ssh/id_ed25519'
-alias pgadmin='docker run -p 5050:5050 -e "PGADMIN_DEFAULT_EMAIL=admin@admin.com" -e "PGADMIN_DEFAULT_PASSWORD=password" -e "PGADMIN_LISTEN_PORT=5050" --rm --name pgadmin  dpage/pgadmin4'
 alias nemo='nemo . &'
 alias ranger='ranger .'
 alias ra='ranger'

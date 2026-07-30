@@ -1,11 +1,15 @@
 return {
   -- gruvbox colorscheme
   {
-    "ellisonleao/gruvbox.nvim",
-    priority = 1000,
+    'sainnhe/gruvbox-material',
     lazy = false,
+    priority = 1000,
     config = function()
-      vim.cmd.colorscheme "gruvbox"
+      vim.g.gruvbox_material_background = 'medium'
+      vim.g.gruvbox_material_foreground = 'mix'
+      vim.g.gruvbox_transparent_background = false
+      vim.g.gruvbox_material_enable_italic = true
+      vim.g.gruvbox_material_enable_bold = true
     end
   },
 
@@ -25,13 +29,20 @@ return {
       theme = "gruvbox-material",
       sections = {
         lualine_x = {
-          { GetSessionProgress },
+          { require("writing-sessions").get_statusline_info },
           'encoding',
           'fileformat',
           'filetype'
         }
       }
     }
+  },
+
+  {
+    "folke/tokyonight.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {},
   },
 
   {
@@ -64,8 +75,14 @@ return {
       "MunifTanjim/nui.nvim",
       -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
     },
-      opts = {
-      visible = true
+    opts = {
+      filesystem = {
+        filtered_items = {
+          visible = true,
+          hide_dotfiles = false,
+          hide_gitignored = true,
+        }
+      }
     },
     keys = {
       {"<C-b>", "<cmd>Neotree show toggle<CR>"}
