@@ -16,6 +16,7 @@ return {
         "pyright",
         "rust_analyzer",
         "tinymist",
+        "svelte",
         "cssls",
         "html",
         "zls",
@@ -167,6 +168,11 @@ return {
         capabilities = capabilities
       })
       vim.lsp.enable('tinymist')
+
+      vim.lsp.config('svelte', {
+        capabilities = capabilities
+      })
+      vim.lsp.enable('svelte')
 
       -- setup keymaps
       vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {}) -- go to definition
