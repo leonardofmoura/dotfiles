@@ -24,12 +24,15 @@ return {
 
   {
     'nvim-lualine/lualine.nvim',
-    dependencies = { 'nvim-tree/nvim-web-devicons' },
+    dependencies = {
+      'nvim-tree/nvim-web-devicons',
+      'leonardofmoura/writing-sessions.nvim'
+    },
     opts = {
       theme = "gruvbox-material",
       sections = {
         lualine_x = {
-          { require("writing-sessions").get_statusline_info },
+          -- { require("writing-sessions").get_statusline_info },
           'encoding',
           'fileformat',
           'filetype'

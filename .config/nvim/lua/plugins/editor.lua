@@ -132,6 +132,10 @@ return {
   },
 
   {
+    "leonardofmoura/writing-sessions.nvim"
+  },
+
+  {
     "bullets-vim/bullets.vim"
   },
 }
