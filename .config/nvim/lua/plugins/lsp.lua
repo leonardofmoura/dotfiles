@@ -176,8 +176,9 @@ return {
 
       -- setup keymaps
       vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {}) -- go to definition
-      vim.keymap.set('n', 'K', vim.lsp.buf.hover, {}) -- Hover documentation
+      vim.keymap.set('n', '<leader>h', vim.lsp.buf.hover, {}) -- Hover documentation
       vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, {}) -- code action
+      vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, {}) -- open diagnostic description
     end
   },
 }

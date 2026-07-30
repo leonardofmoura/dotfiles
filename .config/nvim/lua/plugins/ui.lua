@@ -1,12 +1,16 @@
 return {
   -- gruvbox colorscheme
   {
-    "ellisonleao/gruvbox.nvim",
+    'sainnhe/gruvbox-material',
+    lazy = false,
     priority = 1000,
-    opts = {
-      terminal_colors = true,
-      transparent_mode = false,
-    }
+    config = function()
+      vim.g.gruvbox_material_background = 'medium'
+      vim.g.gruvbox_material_foreground = 'mix'
+      vim.g.gruvbox_transparent_background = false
+      vim.g.gruvbox_material_enable_italic = true
+      vim.g.gruvbox_material_enable_bold = true
+    end
   },
 
   {
@@ -22,7 +26,7 @@ return {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
     opts = {
-      theme = "tokyonight",
+      theme = "gruvbox-material",
       sections = {
         lualine_x = {
           { require("writing-sessions").get_statusline_info },
