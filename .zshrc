@@ -108,7 +108,7 @@ alias waybarconfig='(cd ~/.config/waybar; $EDITOR config.jsonc)'
 alias nvconfig='(cd ~/.config/nvim; $EDITOR init.lua)'
 
 # Dotfile management
-alias config='git --git-dir=$HOME/.dotfiles/.git --work-tree=$HOME'
+alias config='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias css='config status -s'
 alias caa='config add -A'
 alias ccm='config commit -m'
@@ -141,4 +141,4 @@ function nvn() {
 }
 
 # add to path
-export PATH=$PATH:~/.local/bin:$(yarn global bin)
+export PATH=$PATH:~/.local/bin:
