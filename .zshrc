@@ -103,7 +103,7 @@ fi
 alias zshconfig='$EDITOR ~/.zshrc'
 alias alconfig='(cd ~/.config/alacritty; $EDITOR alacritty.toml)'
 alias awconfig='(cd ~/.config/awesome; $EDITOR rc.lua)'
-alias hyprconfig='(cd ~/.config/hypr; $EDITOR hyprland.conf)'
+alias hyprconfig='(cd ~/.config/hypr; $EDITOR hyprland.lua)'
 alias waybarconfig='(cd ~/.config/waybar; $EDITOR config.jsonc)'
 alias nvconfig='(cd ~/.config/nvim; $EDITOR init.lua)'
 
