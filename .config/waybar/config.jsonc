@@ -21,10 +21,10 @@
             "4": []
         },
         "format-icons": {
-            "1": " Web",
+            "1": " Main",
             "2": " Term",
-            "3": " Code",
-            "4": " Music"
+            "3": " Files",
+            "4": "󰇮 Email"
         }
     },
 
@@ -118,5 +118,5 @@
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     }
-}]
+}
 
