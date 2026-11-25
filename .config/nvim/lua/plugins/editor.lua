@@ -73,9 +73,13 @@ return {
       -- enable native treessitter features depending on filetype
       vim.api.nvim_create_autocmd("FileType", {
         pattern = "*",
-        callback = function()
-          vim.treesitter.start() -- enable treesitter highlinghting
-          vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()" -- enable indentation
+        callback = function(args)
+          local ok, parser = pcall(vim.treesitter.get_parser, args.buf)
+          if not ok or not parser then
+            return
+          end
+          vim.treesitter.start(args.buf) -- enable treesitter highlinghting
+          vim.bo[args.buf].indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()" -- enable indentation
         end,
       })
     end
