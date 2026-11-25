@@ -58,6 +58,7 @@ return {
         "regex",
         "rust",
         "scss",
+        "svelte",
         "toml",
         "tsx",
         "typescript",
@@ -71,7 +72,7 @@ return {
 
       -- enable native treessitter features depending on filetype
       vim.api.nvim_create_autocmd("FileType", {
-        pattern = {'<filetype>'},
+        pattern = "*",
         callback = function()
           vim.treesitter.start() -- enable treesitter highlinghting
           vim.bo.indentexpr = "v:lua.require'nvim-treesitter'.indentexpr()" -- enable indentation
